@@ -5,6 +5,7 @@ from utils.csvPlottyVisualizer import top_contacts_chart, top_usage_chart, usage
 st.set_page_config(layout="wide")
 st.title("Call Records Dashboard 📞")
 
+
 extractor = CallRecordsExtractor()
 
 uploaded_files = st.file_uploader(
@@ -59,3 +60,20 @@ if uploaded_files:
                 st.plotly_chart(fig, use_container_width=True)
             else:
                 st.info("No calls found for this number.")
+    
+
+st.markdown(
+    """
+    <hr>
+    <p style='text-align: center; 
+    font-size: 14px; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;'>Made by <strong>Vinay</strong> | <a href='https://github.com/vinay-ghate/CallRecordsVisualizer' target='_blank'>GitHub</a>
+    </p>
+    """, 
+    unsafe_allow_html=True
+)
+
