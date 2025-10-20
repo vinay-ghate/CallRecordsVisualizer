@@ -1,6 +1,6 @@
 import streamlit as st
-from Jio import CallRecordsExtractor
-from csvPlottyVisualizer import top_contacts_chart, top_usage_chart, usage_distribution_pie, calls_over_time,total_call_time_over_time,number_call_summary
+from utils.Jio import CallRecordsExtractor
+from utils.csvPlottyVisualizer import top_contacts_chart, top_usage_chart, usage_distribution_pie, calls_over_time,total_call_time_over_time,number_call_summary
 
 st.set_page_config(layout="wide")
 st.title("Call Records Dashboard 📞")
